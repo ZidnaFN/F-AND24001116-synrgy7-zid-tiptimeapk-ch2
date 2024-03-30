@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Layout Kotlin</string>
+    <string name="nav">Tip Time</string>
+
+    <string name="cost">Cost of Service</string>
+    <string name="how">How was the service?</string>
+
+    <string name="radio1">Amazing (20%)</string>
+    <string name="radio2">Good (18%)</string>
+    <string name="radio3">Ok (10%)</string>
+
+    <string name="tip">Round up tip?</string>
+    <string name="button">Calculate</string>
+    <string name="amount">Tip Amount</string>
+</resources>

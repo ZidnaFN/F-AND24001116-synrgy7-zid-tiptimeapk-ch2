@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.LayoutKotlin" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+        <style name="Theme.MyApp" parent="Theme.MaterialComponents.DayNigth.DarkActionBar">
+            <!-- color -->
+            <item name="colorPrimary">#696969</item>
+            <item name="colorButtonNormal">#A392CF</item>
+            <item name="android:textColor">#ffffff</item>
+
+            <!-- font -->
+            <!-- tambahkan item font jika diperlukan -->
+        </style>
+
+    </style>
+</resources>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="theme/colorPrimary"
+    android:theme="@style/Base.Theme.LayoutKotlin"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingClass">
+
+    <TextView
+        android:id="@+id/viewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:text="@string/nav"
+        android:paddingLeft="20sp"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:background="#6750A4"
+        android:gravity="center_vertical"
+        android:theme="@style/Base.Theme.LayoutKotlin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,VisualLintOverlap" />
+
+    <LinearLayout
+        android:id="@+id/layoutGrup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        android:theme="@style/Base.Theme.LayoutKotlin">
+
+        <EditText
+            android:id="@+id/editTextNominal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:hint="@string/cost"
+            android:inputType="numberDecimal"
+            tools:ignore="Autofill,TextContrastCheck,TouchTargetSizeCheck" />
+        <TextView
+            android:id="@+id/viewText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/how"
+            android:layout_marginStart="20dp"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="156dp" />
+        <RadioGroup
+            android:id="@+id/radioTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="36dp"
+            tools:ignore="RtlHardcoded,SpUsage">
+
+            <RadioButton
+                android:id="@+id/radioButton10Percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio1"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/radioButton15Percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/radio2"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/radioButton20Percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio3"
+                tools:ignore="HardcodedText" />
+
+        </RadioGroup>
+        <Switch
+            android:id="@+id/switchButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:checked="true"
+            android:minHeight="48dp"
+            android:text="@string/tip"
+            android:textSize="16dp"
+            tools:ignore="HardcodedText,SpUsage,TextContrastCheck,TextSizeCheck,UnknownId,UseSwitchCompatOrMaterialXml,VisualLintButtonSize" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/button"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutGrup"
+        tools:ignore="HardcodedText,SpUsage,TextSizeCheck,TextContrastCheck,VisualLintButtonSize" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/amount"
+        android:textColor="#808080"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculate"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageViewCenter"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/image"
+        android:layout_marginLeft="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculate"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

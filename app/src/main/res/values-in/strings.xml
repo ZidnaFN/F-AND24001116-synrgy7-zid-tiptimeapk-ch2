@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Layout Kotlin</string>
+    <string name="nav">Tip</string>
+
+    <string name="cost">Biaya Layanan</string>
+    <string name="how">Bagaimana dengan Layannanya?</string>
+
+    <string name="radio1">Luarbiasa (20%)</string>
+    <string name="radio2">Bagus (18%)</string>
+    <string name="radio3">Oke (10%)</string>
+
+    <string name="tip">Bulatkan?</string>
+    <string name="button">Hitung</string>
+    <string name="amount">Jumlah</string>
+</resources>
