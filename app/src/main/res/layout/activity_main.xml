@@ -46,42 +46,33 @@
 
         <android.widget.RadioGroup
             android:id="@+id/radioTip"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
+            style="@style/RadioGroup"
             android:textSize="36dp"
             tools:ignore="RtlHardcoded,SpUsage">
 
             <android.widget.RadioButton
                 android:id="@+id/radioButton10Percent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/RadioButton"
                 android:text="@string/radio1"
                 tools:ignore="HardcodedText" />
 
             <android.widget.RadioButton
                 android:id="@+id/radioButton15Percent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/RadioButton"
                 android:checked="true"
                 android:text="@string/radio2"
                 tools:ignore="HardcodedText" />
 
             <android.widget.RadioButton
                 android:id="@+id/radioButton20Percent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/RadioButton"
                 android:text="@string/radio3"
                 tools:ignore="HardcodedText" />
 
         </android.widget.RadioGroup>
         <android.widget.Switch
             android:id="@+id/switchButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
+            style="@style/RadioGroup"
             android:checked="true"
             android:minHeight="48dp"
             android:text="@string/tip"
@@ -91,11 +82,7 @@
 
     <android.widget.Button
         android:id="@+id/buttonCalculate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginRight="20dp"
+        style="@style/ButtonGroup"
         android:text="@string/button"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -105,10 +92,7 @@
 
     <android.widget.TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="20dp"
+        style="@style/RadioGroup"
         android:text="@string/amount"
         android:textColor="#808080"
         android:textSize="16sp"
