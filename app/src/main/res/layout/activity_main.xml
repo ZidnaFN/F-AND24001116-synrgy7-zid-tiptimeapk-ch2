@@ -8,7 +8,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:ignore="MissingClass">
 
-    <TextView
+    <android.widget.TextView
         android:id="@+id/viewHeader"
         android:layout_width="match_parent"
         android:layout_height="60sp"
@@ -32,7 +32,7 @@
         tools:ignore="MissingConstraints"
         android:theme="@style/Base.Theme.LayoutKotlin">
 
-        <EditText
+        <android.widget.EditText
             android:id="@+id/editTextNominal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -40,8 +40,10 @@
             android:layout_marginTop="100dp"
             android:hint="@string/cost"
             android:inputType="numberDecimal"
-            tools:ignore="Autofill,TextContrastCheck,TouchTargetSizeCheck" />
-        <TextView
+            tools:ignore="Autofill,TextContrastCheck,TouchTargetSizeCheck"/>
+
+
+        <android.widget.TextView
             android:id="@+id/viewText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -50,8 +52,9 @@
             android:textSize="16sp"
             tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck"
             tools:layout_editor_absoluteX="20dp"
-            tools:layout_editor_absoluteY="156dp" />
-        <RadioGroup
+            tools:layout_editor_absoluteY="156dp"/>
+
+        <android.widget.RadioGroup
             android:id="@+id/radioTip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -60,14 +63,14 @@
             android:textSize="36dp"
             tools:ignore="RtlHardcoded,SpUsage">
 
-            <RadioButton
+            <android.widget.RadioButton
                 android:id="@+id/radioButton10Percent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radio1"
                 tools:ignore="HardcodedText" />
 
-            <RadioButton
+            <android.widget.RadioButton
                 android:id="@+id/radioButton15Percent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -75,15 +78,15 @@
                 android:text="@string/radio2"
                 tools:ignore="HardcodedText" />
 
-            <RadioButton
+            <android.widget.RadioButton
                 android:id="@+id/radioButton20Percent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radio3"
                 tools:ignore="HardcodedText" />
 
-        </RadioGroup>
-        <Switch
+        </android.widget.RadioGroup>
+        <android.widget.Switch
             android:id="@+id/switchButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -96,7 +99,7 @@
             tools:ignore="HardcodedText,SpUsage,TextContrastCheck,TextSizeCheck,UnknownId,UseSwitchCompatOrMaterialXml,VisualLintButtonSize" />
     </LinearLayout>
 
-    <Button
+    <android.widget.Button
         android:id="@+id/buttonCalculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -110,7 +113,7 @@
         app:layout_constraintTop_toBottomOf="@+id/layoutGrup"
         tools:ignore="HardcodedText,SpUsage,TextSizeCheck,TextContrastCheck,VisualLintButtonSize" />
 
-    <TextView
+    <android.widget.TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -123,7 +126,7 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonCalculate"
         tools:ignore="HardcodedText,TextContrastCheck" />
 
-    <ImageView
+    <android.widget.ImageView
         android:id="@+id/imageViewCenter"
         android:layout_width="100dp"
         android:layout_height="100dp"
