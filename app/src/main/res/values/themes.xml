@@ -1,15 +1,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.LayoutKotlin" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="colorPrimary">#ffffff</item>
         <item name="colorButtonNormal">#6750A4</item>
         <item name="android:textColor">#000000</item>
     </style>
 
     <style name="Theme.LayoutKotlin" parent="Base.Theme.LayoutKotlin">
-
+        <item name="colorPrimary">#ffffff</item>
+        <item name="colorButtonNormal">#50A497</item>
+        <item name="android:textColor">#000000</item>
     </style>
 
 </resources>
